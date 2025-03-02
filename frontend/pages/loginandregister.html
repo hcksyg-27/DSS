@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document Scan System</title>
+    <link rel="stylesheet" 
+          href="../css/loginandregister.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <h2 class="title">Login and Registration</h2>
+        
+        <div class="slider"></div>
+            <div class="btn">
+                <button class="login">Login</button>
+                <button class="signup">Signup</button>
+            </div>
+
+   
+        <div class="form-section">
+
+ 
+            <form id = "login-form" class="login-box">
+                <input  id ="email" type="email" 
+                       class="email ele" 
+                       placeholder="youremail@email.com">
+                <input id ="password" type="password"
+                       class="password ele" 
+                       placeholder="password">
+                <button type = "submit" class="clkbtn">Login</button>
+            </form>
+
+
+            <form id="signup-form" class="signup-box">
+                <input  type="text"
+                       class="name ele" 
+                       placeholder="Enter your name">
+                <input type="email" 
+                       class="email ele" 
+                       placeholder="youremail@email.com">
+                <input type="password" 
+                       class="password ele" 
+                       placeholder="password">
+                <input type="password" 
+                       class="password ele" id="error-underline"
+                       placeholder="Confirm password">
+                
+                <button class="clkbtn">Signup</button>
+            </form>
+        </div>
+    </div>
+    <script src = "../js/loginandregister.js"></script>
+</body>
+</html>

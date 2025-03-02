@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document Scan System</title>
+    <link rel="stylesheet" href="../css/dss.css">
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>Document Scan System</h1>
+            <button type="button" id="logoutbtn" onclick="logout()">Logout</button>
+        </header>
+
+        <main class="main-content">
+            <section class="upload-section">
+                <h2>Upload Your Document</h2>
+                <input type="file" id="document-upload">
+                <button onclick="uploadDocument()">Upload & Scan</button>
+                <button onclick="matchDocument()">Find Similar Documents</button>
+                <button onclick="matchDocumentAI()">AI-Powered Match</button>
+            </section>
+
+            
+            <section class="match-results">
+                <h2>Matching Results</h2>
+                <p id="match-result">No matches found yet.</p>
+            </section>
+            <!-- <section class="scan-history">
+                <h2>Scan History</h2>
+                <ul id="history-list">
+                    <li>No scans yet.</li>
+                </ul>
+            </section> -->
+
+        </main>
+
+        <section class="credit-section" id="creditSection">
+            <h2>Credits & Scanning Limits</h2>
+            <p>You have <span id="credit-count">0</span> free scans today.</p>
+            <button id="request-btn" onclick="requestCredits()">Request More Credits</button>
+        </section>
+
+    </div>
+
+    <script src="../js/dss.js"></script>
+
+</body>
+</html>
+
+
+
